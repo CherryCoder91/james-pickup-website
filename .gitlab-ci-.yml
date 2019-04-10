@@ -1,0 +1,32 @@
+image: node:10
+
+build:
+  stage: build
+  only: 
+   - master
+  cache:
+    paths:
+      - node_modules/
+  script:
+    - npm install --quiet
+    - npm run build --prod
+  artifacts:
+    paths:
+      - dist/
+    
+
+deploy_prod:
+  stage: deploy
+  environment: 
+    name: production
+    url: $FIREBASE_URL
+  only: 
+   - master
+  dependencies:
+    - build
+  cache:
+    policy: pull
+    paths:
+      - node_modules/
+  script:
+    - npm run deploy
