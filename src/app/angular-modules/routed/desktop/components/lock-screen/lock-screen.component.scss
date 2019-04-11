@@ -1,10 +1,31 @@
 .fill-parent {
-    height:100%;
-    width:100%;
+  height: 100%;
+  width: 100%;
 }
 
 .os-wallpaper {
-    background-image: url("/assets/modules/routed/desktop/os-wallpaper.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  background-image: url("/assets/modules/routed/desktop/os-wallpaper.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.profile-icon {
+  background-image: url("/assets/modules/routed/desktop/profile.jpg");
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 2.5vw;
+  width: 2.5vw;
+  margin: 0 auto;
+  margin-top: 20%;
+  cursor: pointer;
+}
+
+.profile-text {
+  text-align: center;
+  color: white;
+  margin-top: 0.6vw;
+  font-size: 0.6vw;
+  cursor: pointer;
 }
