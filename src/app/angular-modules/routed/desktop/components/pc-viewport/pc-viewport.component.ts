@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginStateService } from 'src/app/angular-modules/service/os-services/services/login-state.service';
 
 @Component({
   selector: 'app-pc-viewport',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PcViewportComponent implements OnInit {
 
-  constructor() { }
+  constructor(private loginStateService: LoginStateService) { }
 
   ngOnInit() {
   }
