@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-frosty-pane',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./frosty-pane.component.scss']
 })
 export class FrostyPaneComponent implements OnInit {
+
+  @Input()
+  public imageUrl = '';
 
   constructor() { }
 
