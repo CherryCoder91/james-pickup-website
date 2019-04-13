@@ -1,0 +1,20 @@
+.bluetooth-image-opacity {
+  opacity: 0.8;
+}
+
+.bluetooth-image-size {
+  display: inline-block;
+  height: 100%;
+  margin-left: 2px;
+  transform: scale(0.7);
+}
+
+.bluetooth-image {
+  height: 100%;
+  margin-bottom: 4px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}

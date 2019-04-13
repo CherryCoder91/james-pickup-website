@@ -11,9 +11,15 @@ import { TaskbarComponent } from './components/taskbar/taskbar.component';
 import { TaskbarAppleComponent } from './components/taskbar-apple/taskbar-apple.component';
 import { TaskbarTimeComponent } from './components/taskbar-time/taskbar-time.component';
 import { TaskbarWifiComponent } from './components/taskbar-wifi/taskbar-wifi.component';
+import { TaskbarBluetoothComponent } from './components/taskbar-bluetooth/taskbar-bluetooth.component';
+import { TaskbarSiriComponent } from './components/taskbar-siri/taskbar-siri.component';
+import { TaskbarLocationComponent } from './components/taskbar-location/taskbar-location.component';
+import { TaskbarSearchComponent } from './components/taskbar-search/taskbar-search.component';
+import { TaskbarBatteryComponent } from './components/taskbar-battery/taskbar-battery.component';
+import { TaskbarSpeakerComponent } from './components/taskbar-speaker/taskbar-speaker.component';
 
 @NgModule({
-  declarations: [DesktopPageComponent, PcViewportComponent, LockScreenComponent, HomeScreenComponent, TaskbarComponent, TaskbarAppleComponent, TaskbarTimeComponent, TaskbarWifiComponent],
+  declarations: [DesktopPageComponent, PcViewportComponent, LockScreenComponent, HomeScreenComponent, TaskbarComponent, TaskbarAppleComponent, TaskbarTimeComponent, TaskbarWifiComponent, TaskbarBluetoothComponent, TaskbarSiriComponent, TaskbarLocationComponent, TaskbarSearchComponent, TaskbarBatteryComponent, TaskbarSpeakerComponent],
   imports: [
     CommonModule,
     DesktopRoutingModule,
