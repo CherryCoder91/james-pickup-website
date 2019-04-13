@@ -10,9 +10,10 @@ import { FrostyModule } from '../../widget/frosty/frosty.module';
 import { TaskbarComponent } from './components/taskbar/taskbar.component';
 import { TaskbarAppleComponent } from './components/taskbar-apple/taskbar-apple.component';
 import { TaskbarTimeComponent } from './components/taskbar-time/taskbar-time.component';
+import { TaskbarWifiComponent } from './components/taskbar-wifi/taskbar-wifi.component';
 
 @NgModule({
-  declarations: [DesktopPageComponent, PcViewportComponent, LockScreenComponent, HomeScreenComponent, TaskbarComponent, TaskbarAppleComponent, TaskbarTimeComponent],
+  declarations: [DesktopPageComponent, PcViewportComponent, LockScreenComponent, HomeScreenComponent, TaskbarComponent, TaskbarAppleComponent, TaskbarTimeComponent, TaskbarWifiComponent],
   imports: [
     CommonModule,
     DesktopRoutingModule,
