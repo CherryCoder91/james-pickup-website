@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class LoginStateService {
 
-  public isLoggedIn = true;
+  public isLoggedIn = false;
 
   public login(): void {
     this.isLoggedIn = true;
