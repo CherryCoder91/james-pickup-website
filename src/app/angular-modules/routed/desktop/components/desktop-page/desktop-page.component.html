@@ -1,5 +1,8 @@
 <div class="fill-height-width desktop-background-image">
-    <div class="pc-screen-container-size-and-position">
+    <div class="pc-screen-container-size-and-position" #pcViewport>
         <app-pc-viewport></app-pc-viewport>
+    </div>
+    <div class="fill-parent-width text-align-center">
+        <button class="fullscreen-base-button-styles fullscreen-button-style fullscreen-button-position" (click)="enterFullscreen(pcViewport)">Activate Fullscreen</button>
     </div>
 </div>

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { FullscreenService } from 'src/app/angular-modules/service/fullscreen/services/fullscreen.service';
+import { element } from 'protractor';
 
 @Component({
   selector: 'app-desktop-page',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DesktopPageComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('pcViewport') pcViewport: ElementRef<HTMLElement>;
+
+  public shouldShowFullScreenButton: boolean;
+
+  constructor(private readonly fullscreenService: FullscreenService) { }
 
   ngOnInit() {
+    this.shouldShowFullScreenButton = this.deviceSupportsFullscreenRequest(this.pcViewport);
   }
 
+  public enterFullscreen(element: ElementRef<HTMLElement>) {
+    this.fullscreenService.enterFullscreen(element);
+  }
+
+  private deviceSupportsFullscreenRequest(element: ElementRef<HTMLElement>): boolean {
+    return this.fullscreenService.deviceSupportsFullscreenRequest(element);
+  }
 }
