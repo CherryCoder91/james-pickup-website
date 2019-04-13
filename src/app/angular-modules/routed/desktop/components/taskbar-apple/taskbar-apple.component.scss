@@ -1,0 +1,19 @@
+.apple-image-opacity {
+    opacity: 0.8;
+  }
+
+  .apple-image-size {
+      display: inline-block;
+      height:100%;
+      margin:1px;
+      margin-left:8px;
+  }
+
+.pointer {
+    cursor: pointer;
+}
+
+.apple-image {
+    height:calc(100% - 4px);
+    margin-bottom:3px;
+}

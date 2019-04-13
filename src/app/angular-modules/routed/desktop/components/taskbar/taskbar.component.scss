@@ -1,0 +1,30 @@
+.taskbar-size {
+  width: 99.99%;
+  height: 5%;
+  max-height: 22px;
+  overflow: hidden;
+}
+
+.taskbar-color {
+  background: rgba(255, 255, 255, 0.377);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+.remove-list-base-styling {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.fill-parent-height {
+  height: 100%;
+}
