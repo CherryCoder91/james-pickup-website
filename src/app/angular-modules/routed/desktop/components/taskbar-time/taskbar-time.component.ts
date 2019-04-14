@@ -34,7 +34,6 @@ export class TaskbarTimeComponent implements OnInit, OnDestroy {
     const timeContainer = (this.dateTimeElement.nativeElement as HTMLDivElement);
     const height = timeContainer.clientHeight;
     const newFontSize = (height * 0.7);
-    console.log(height);
     timeContainer.style.fontSize = `${newFontSize}px`;
     timeContainer.style.lineHeight = `${height}px`;
   }
