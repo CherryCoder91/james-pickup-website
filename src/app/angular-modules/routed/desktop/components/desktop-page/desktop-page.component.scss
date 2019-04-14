@@ -44,24 +44,23 @@
 }
 
 .fullscreen-button-style {
-    padding:10px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    background-color: white;
-    color: black;
-    border: 2px solid #555555;
-    font-size: 16px;
-    cursor: pointer;
+  padding: 10px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  font-size: 16px;
+  cursor: pointer;
 }
 .fullscreen-button-style:hover {
-    background-color: #555555;
-    color: white;
+  background-color: #555555;
+  color: white;
 }
 
 .fullscreen-button-position {
-    margin-top:20px;
+  margin-top: 20px;
 }
-
 
 .fill-parent-width {
   width: 100%;
@@ -69,4 +68,12 @@
 
 .text-align-center {
   text-align: center;
+}
+
+.position-size-headphone-container {
+  position: absolute;
+  top: 42vw;
+  left: 88%;
+  height: 7vw;
+  width: 12vw;
 }

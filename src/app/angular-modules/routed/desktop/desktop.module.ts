@@ -17,13 +17,15 @@ import { TaskbarLocationComponent } from './components/taskbar-location/taskbar-
 import { TaskbarSearchComponent } from './components/taskbar-search/taskbar-search.component';
 import { TaskbarBatteryComponent } from './components/taskbar-battery/taskbar-battery.component';
 import { TaskbarSpeakerComponent } from './components/taskbar-speaker/taskbar-speaker.component';
+import { MusicHotspotModule } from '../../widget/music-hotspot/music-hotspot.module';
 
 @NgModule({
   declarations: [DesktopPageComponent, PcViewportComponent, LockScreenComponent, HomeScreenComponent, TaskbarComponent, TaskbarAppleComponent, TaskbarTimeComponent, TaskbarWifiComponent, TaskbarBluetoothComponent, TaskbarSiriComponent, TaskbarLocationComponent, TaskbarSearchComponent, TaskbarBatteryComponent, TaskbarSpeakerComponent],
   imports: [
     CommonModule,
     DesktopRoutingModule,
-    FrostyModule
+    FrostyModule,
+    MusicHotspotModule
   ]
 })
 export class DesktopModule { }
