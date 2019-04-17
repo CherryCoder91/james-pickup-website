@@ -3,7 +3,6 @@
   width: 100%;
 }
 
-
 .os-wallpaper {
   background-image: url("/assets/modules/routed/desktop/os-wallpaper.jpg");
   background-size: 100% 100%;
@@ -21,7 +20,7 @@
   max-height: 50px;
   height: 10%;
   min-width: 100px;
-  width: 20%; /*Blur bar width*/
+  width: 40%; /*Blur bar width*/
   background: inherit;
   border-radius: 5px 5px 0px 0px;
 }
@@ -44,13 +43,14 @@
 .app-icon-container {
   height: 100%;
   width: 100%;
-  margin-left:3px;
-  margin-right:3px;
+  margin-left: 6px;
+  margin-right: 6px;
   display: inline;
 }
 
 .app-icon-image {
-  height: calc(100% - 3px);
+  height: calc(100% - 10px);
+  margin-top: 5px;
   position: relative;
   overflow: auto;
   -webkit-transition: all 0.3s;
@@ -59,14 +59,11 @@
 
 .app-icon-image:hover {
   z-index: 3;
-  transform: scale(1.2);
-  // bottom:10px;
-
-margin-top: -8px;
+  transform: scale(1.5);
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: -8px;
   -webkit-transform-origin: 50% 100%;
-  // -ms-transform: translate(0, 50px); /* IE 9 */
-  // -webkit-transform: translate(0, 50px); /* Safari */
-  // transform: translate(0, -10px);
 }
 
 .blurred-box-outer-layer2 {
@@ -77,12 +74,9 @@ margin-top: -8px;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  // overflow: hidden;
   max-height: 50px;
   height: 10%;
   min-width: 100px;
-  width: 30%;
-  // background: inherit;
+  width: 40%;
   border-radius: 5px 5px 0px 0px;
-  // background-color: red;
 }
